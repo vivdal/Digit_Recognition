@@ -1,7 +1,5 @@
 import numpy as np
 
-### Functions for you to fill in ###
-
 
 
 def polynomial_kernel(X, Y, c, p):
@@ -20,6 +18,7 @@ def polynomial_kernel(X, Y, c, p):
             kernel_matrix - (n, m) Numpy array containing the kernel matrix
     """
     return np.power((X@Y.T)+c,p)
+    
     raise NotImplementedError
 
 
@@ -38,5 +37,8 @@ def rbf_kernel(X, Y, gamma):
         Returns:
             kernel_matrix - (n, m) Numpy array containing the kernel matrix
     """
-    
+    squared_term= np.diag(X@X.T) + np.diag(Y@Y.T) - (2*X@Y.T)
+    kernel_matrix = np.exp(-gamma*squared_term)
+    return kernel_matrix
+
     raise NotImplementedError

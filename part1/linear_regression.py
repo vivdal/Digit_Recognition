@@ -1,6 +1,6 @@
 import numpy as np
 
-### Functions for you to fill in ###
+
 
 def closed_form(X, Y, lambda_factor):
     """
@@ -19,9 +19,10 @@ def closed_form(X, Y, lambda_factor):
     I = np.identity(X.shape[1])
     theta = (np.linalg.inv(np.matmul(X.T,X)+lambda_factor*I)@(np.matmul(X.T,Y)))
     return theta
+
     raise NotImplementedError
 
-### Functions which are already complete, for you to use ###
+
 
 def compute_test_error_linear(test_x, Y, theta):
     test_y_predict = np.round(np.dot(test_x, theta))

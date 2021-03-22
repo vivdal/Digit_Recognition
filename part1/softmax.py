@@ -91,6 +91,7 @@ def run_gradient_descent_iteration(X, Y, theta, alpha, lambda_factor, temp_param
     # theta = theta - alpha * (-np.matmul(M-prob_matrix, X)/(temp_parameter*n) + lambda_factor*theta)
     #
     # return theta
+
     itemp = 1. / temp_parameter
     num_examples = X.shape[0]
     num_labels = theta.shape[0]
@@ -99,6 +100,7 @@ def run_gradient_descent_iteration(X, Y, theta, alpha, lambda_factor, temp_param
     M = sparse.coo_matrix(([1] * num_examples, (Y, range(num_examples))), shape=(num_labels, num_examples)).toarray()
     non_regularized_gradient = np.dot(M - probabilities, X)
     non_regularized_gradient *= -itemp / num_examples
+
     return theta - alpha * (non_regularized_gradient + lambda_factor * theta)
 
 
@@ -123,6 +125,7 @@ def update_y(train_y, test_y):
     """
     train_y_mod3 = np.mod(train_y,3)
     test_y_mod3 = np.mod(test_y,3)
+
     return train_y_mod3, test_y_mod3
     raise NotImplementedError
 
@@ -143,6 +146,7 @@ def compute_test_error_mod3(X, Y, theta, temp_parameter):
     """
     predicted_label = get_classification(X,theta,temp_parameter)
     test_error = 1 - np.mean(np.mod(predicted_label,3)==Y)
+    
     return test_error
     raise NotImplementedError
 
