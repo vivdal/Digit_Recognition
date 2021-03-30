@@ -28,7 +28,7 @@ This folder contains the custom implementation of regression, support vector mac
 ## Part2-nn
 
 This folder contains the python files for implementaion of neural networks.
-<img src = "feedf.PNG">
+
 <ul>
   <li>neural_nets.py: implements a simple feed forward neural network from scratch and trains it with custom built functions </li>
   <img src = "images/feedf.PNG">
@@ -45,7 +45,7 @@ This folder contains files for implementing CNN and MLP neural networks.
  
  ## Part2-twodigits
  This folder contains the files to recognize two digits that are slightly overlapped with each other.
- <img src = "two.PNG">
+ <img src = "images/two.PNG">
  <ul>
   <li>mlp.py: implements multilayer perceptron to recognize the two digits </li>
   
