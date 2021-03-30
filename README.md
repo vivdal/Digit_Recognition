@@ -19,6 +19,7 @@ This folder contains the custom implementation of regression, support vector mac
   <img src = "images/graddesc.PNG">
   
   <li>kernel.py : implements kernel in the following way</li>
+  <img src = "images/kernel.PNG">
   
   <li>features.py: implements PCA (test error = 0.08 for 10 dimensional PCA reduction) and cubic feature transformation </li>
   
