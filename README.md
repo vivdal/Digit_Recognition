@@ -13,7 +13,7 @@ This folder contains the custom implementation of regression, support vector mac
   
   <li>SVM.py: implemented multiclass svm classification(test error: 0.08 with c=0.1)</li>
   
-  <li> softmax.py: custom implementation of softmax (test error = 0.08 with temp_parameter =0.5) with the following mathematical representation</li>
+  <li> softmax.py: custom implementation of softmax (test error = 0.08 with temp_parameter =0.5) with the following representation</li>
   <img src = "images/softmax.PNG">
   <img src = "images/costfunc.PNG ">
   <img src = "images/graddesc.PNG">
