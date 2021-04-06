@@ -1,5 +1,5 @@
 # Digit_Recognition
-A machine learning project to recognize handwritten digits based on the MNIST dataset.
+A machine learning project to recognize handwritten digits based on the MNIST dataset.This project is a part of a graduate course on Machine Learning from MIT offered on edx (MIT 6.86x: Machine Learning with python: From Linear Models to Deep Learning).
 
 ## Dataset
 <img src ="images/img1.PNG">
